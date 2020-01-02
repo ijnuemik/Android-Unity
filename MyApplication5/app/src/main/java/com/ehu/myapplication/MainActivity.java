@@ -47,6 +47,10 @@ import com.google.firebase.database.ValueEventListener;
 
 import org.json.JSONObject;
 
+import android.telephony.PhoneStateListener;
+import android.telephony.TelephonyManager;
+
+
 public class MainActivity extends AppCompatActivity {
 
     private FirebaseDatabase mDatabase;
@@ -70,9 +74,9 @@ public class MainActivity extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.listviewmsg);
         initDatabase();
         adapter = new ListViewAdapter();
-        //adapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, new ArrayList<String>());
+        //adapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, new AzrayList<String>());
         listView.setAdapter(adapter);
-        mReference = mDatabase.getReference("Designs").child("3983b82946ceaf3982f97c75b80b530e"); // 변경값을 확인할 child 이름
+        mReference = mDatabase.getReference("Designs").child(deviceId); // 변경값을 확인할 child 이름
         mReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -317,26 +321,29 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("Button clicked!");
     }
 
-    public String md5(String toConvert) {
-
-        String retVal = "";
-
-        MessageDigest algorithm;
+    public String md5(String s) {
+        final String MD5 = "MD5";
         try {
-            algorithm = MessageDigest.getInstance("MD5");
-            algorithm.reset();
-            algorithm.update(toConvert.getBytes());
-            byte messageDigest[] = algorithm.digest();
-            StringBuffer hexString = new StringBuffer();
-            for (int i = 0; i < messageDigest.length; i++) {
-                hexString.append(Integer.toHexString(0xFF & messageDigest[i]));
+            // Create MD5 Hash
+            MessageDigest digest = java.security.MessageDigest
+                    .getInstance(MD5);
+            digest.update(s.getBytes());
+            byte messageDigest[] = digest.digest();
+
+            // Create Hex String
+            StringBuilder hexString = new StringBuilder();
+            for (byte aMessageDigest : messageDigest) {
+                String h = Integer.toHexString(0xFF & aMessageDigest);
+                while (h.length() < 2)
+                    h = "0" + h;
+                hexString.append(h);
             }
-            retVal = hexString + "";
+            return hexString.toString();
+
         } catch (NoSuchAlgorithmException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        return retVal;
+        return "";
     }
 
 
