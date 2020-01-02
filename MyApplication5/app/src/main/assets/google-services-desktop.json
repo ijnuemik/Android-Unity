@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "542816123505",
+    "firebase_url": "https://list-view-94a4f.firebaseio.com",
+    "project_id": "list-view-94a4f",
+    "storage_bucket": "list-view-94a4f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542816123505:android:8e516e73f73168c6a6b9d0",
+        "android_client_info": {
+          "package_name": "com.ehu.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "542816123505-rtjunj5tjuh7nhvjk9etbnrqj93uirur.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqN_05EZLVRA62ghr83sxrBJH1qComEQ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "542816123505-rtjunj5tjuh7nhvjk9etbnrqj93uirur.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542816123505:android:5d46dae2c2af424ea6b9d0",
+        "android_client_info": {
+          "package_name": "com.ehu.unity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "542816123505-rtjunj5tjuh7nhvjk9etbnrqj93uirur.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqN_05EZLVRA62ghr83sxrBJH1qComEQ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "542816123505-rtjunj5tjuh7nhvjk9etbnrqj93uirur.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
