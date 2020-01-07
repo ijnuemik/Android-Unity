@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         String deviceId = md5(android_id);
         Log.i("device id=",deviceId);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.test);
 
         listView = (ListView) findViewById(R.id.listviewmsg);
         initDatabase();
@@ -82,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 //adapter.clear();
                 adapter.clearItem();
+                Log.i("msg2=","onDataChange");
                 for (DataSnapshot messageData : dataSnapshot.getChildren()) {
                     // child 내에 있는 데이터만큼 반복합니다.
                     DesignData msg3 = messageData.getValue(DesignData.class);
@@ -89,8 +90,8 @@ public class MainActivity extends AppCompatActivity {
                     String address = msg3.getAddress();
                     String date = msg3.getDate();
                     Drawable myDrawable = new BitmapDrawable(getResources(), getExternalFilesDir(null).getAbsoluteFile()+"/"+title+".png");
-                    //String msg2 = messageData.getValue().toString();
-                    //Log.i("msg2=",msg2);
+                    String msg2 = messageData.getValue().toString();
+                    Log.i("msg2=",msg2);
                     //Array.add(msg2);
                     //adapter.add(msg2);
                     adapter.addItem(myDrawable, title, address, date);
