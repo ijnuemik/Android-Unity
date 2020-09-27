@@ -17,6 +17,7 @@ If a user can design an interior using furniture or wallpaper directly through a
 
 - The user can check the interior design with 2D, 3D and AR.
 
+
 - 이 애플리케이션은 사용자가 벽지 및 바닥재를 선택하여 적용할 수 있습니다.
 
 - 또한 사용자가 원하는 위치에 가구를 배치할 수 있도록 합니다.
