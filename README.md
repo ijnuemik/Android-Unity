@@ -26,4 +26,7 @@ If a user can design an interior using furniture or wallpaper directly through a
 
 ## Screenshots
 <img src= "https://user-images.githubusercontent.com/43838237/117546908-be8d8d80-b067-11eb-8e99-6af37ee2ae41.jpg" width="700" height="400">
+<img src= "https://user-images.githubusercontent.com/43838237/117546964-02809280-b068-11eb-8daa-45a623e65edc.jpg" width="700" height="400">
+<img src= "https://user-images.githubusercontent.com/43838237/117546976-14623580-b068-11eb-92c5-b28613f557c7.jpg" width="700" height="400">
+<img src= "https://user-images.githubusercontent.com/43838237/117546996-293ec900-b068-11eb-9d7a-f40b1589951b.jpg" width="700" height="400">
 <img src="https://user-images.githubusercontent.com/43838237/94360490-8349da00-00e8-11eb-96f4-358d3003e8e2.png" width="700" height="400">
