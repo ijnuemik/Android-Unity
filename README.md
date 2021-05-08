@@ -25,5 +25,5 @@ If a user can design an interior using furniture or wallpaper directly through a
 - 사용자는 2D, 3D, AR로 인테리어를 확인할 수 있습니다.
 
 ## Screenshots
-![Screenshot_20210508-234610_InteriorPlay](https://user-images.githubusercontent.com/43838237/117546908-be8d8d80-b067-11eb-8e99-6af37ee2ae41.jpg)
+<img src= "https://user-images.githubusercontent.com/43838237/117546908-be8d8d80-b067-11eb-8e99-6af37ee2ae41.jpg" width="700" height="400">
 <img src="https://user-images.githubusercontent.com/43838237/94360490-8349da00-00e8-11eb-96f4-358d3003e8e2.png" width="700" height="400">
